@@ -1,0 +1,17 @@
+{
+  "name": "EROS Kitchen Display System",
+  "short_name": "EROS KDS",
+  "start_url": "/kds",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#0c0a09",
+  "theme_color": "#f59e0b",
+  "description": "Kitchen Display System with Station Routing & Bump Bar",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

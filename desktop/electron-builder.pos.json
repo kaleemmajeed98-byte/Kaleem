@@ -1,0 +1,14 @@
+{
+  "appId": "pk.zestpos.pos",
+  "productName": "ZestPOS",
+  "directories": {
+    "app": "desktop/app",
+    "output": "release/pos"
+  },
+  "compression": "store",
+  "asar": true,
+  "win": {
+    "target": ["portable"],
+    "artifactName": "ZestPOS-${version}-Windows-${arch}.${ext}"
+  }
+}

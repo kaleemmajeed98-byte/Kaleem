@@ -1,0 +1,17 @@
+{
+  "appId": "pk.zestpos.kds",
+  "productName": "ZestPOS KDS",
+  "directories": {
+    "app": "desktop/app",
+    "output": "release/kds"
+  },
+  "compression": "store",
+  "extraMetadata": {
+    "main": "kds.cjs"
+  },
+  "asar": true,
+  "win": {
+    "target": ["portable"],
+    "artifactName": "ZestPOS-KDS-${version}-Windows-${arch}.${ext}"
+  }
+}

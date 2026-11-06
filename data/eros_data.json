@@ -1,0 +1,1715 @@
+{
+  "tenants": [
+    {
+      "id": "tenant-kababjees-01",
+      "name": "Kababjees Group",
+      "slug": "kababjees",
+      "legalBusinessName": "Kababjees Foods (Pvt) Ltd",
+      "taxIdentifier": "NTN-7819234-1",
+      "currency": "PKR",
+      "status": "active",
+      "subscriptionTier": "enterprise",
+      "maxBranches": 20,
+      "maxTerminals": 50,
+      "monthlyGmv": 34512100,
+      "primaryContactName": "Muhammad Asif",
+      "primaryContactEmail": "owner@kababjees.com",
+      "primaryContactPhone": "+92 321 8899123",
+      "logoInitial": "K",
+      "primaryColor": "#10b981",
+      "createdAt": "2026-01-10T12:00:00Z",
+      "updatedAt": "2026-11-05T00:00:00Z"
+    },
+    {
+      "id": "tenant-mehmaan-02",
+      "name": "Mehmaan Restaurant",
+      "slug": "mehmaan",
+      "legalBusinessName": "Mehmaan Hospitality Enterprises",
+      "taxIdentifier": "NTN-6644211-9",
+      "currency": "PKR",
+      "status": "active",
+      "subscriptionTier": "growth",
+      "maxBranches": 5,
+      "maxTerminals": 12,
+      "monthlyGmv": 4200000,
+      "primaryContactName": "Zubair Hashmi",
+      "primaryContactEmail": "owner@mehmaan.pk",
+      "primaryContactPhone": "+92 321 2312279",
+      "logoInitial": "M",
+      "primaryColor": "#f59e0b",
+      "createdAt": "2026-02-14T10:00:00Z",
+      "updatedAt": "2026-11-05T00:00:00Z"
+    },
+    {
+      "id": "tenant-karachi-biryani-test",
+      "name": "Karachi Biryani House",
+      "slug": "karachi-biryani",
+      "legalBusinessName": "Karachi Biryani Foods Pvt Ltd",
+      "taxIdentifier": "NTN-9988776",
+      "currency": "PKR",
+      "status": "active",
+      "subscriptionTier": "growth",
+      "maxBranches": 5,
+      "maxTerminals": 10,
+      "monthlyGmv": 0,
+      "primaryContactName": "Shahid Khan",
+      "primaryContactEmail": "shahid@karachibiryani.pk",
+      "primaryContactPhone": "+92 300 1234567",
+      "logoInitial": "K",
+      "primaryColor": "#059669",
+      "createdAt": "2026-11-05T19:52:26.673Z",
+      "updatedAt": "2026-11-05T19:52:26.676Z"
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-kbj-shaheed-e-millat",
+      "tenantId": "tenant-kababjees-01",
+      "name": "Shaheed-e-Millat (Flagship)",
+      "code": "KHI-01",
+      "city": "Karachi",
+      "address": "Plot 20, Al-Rehman Corner, DMCHS, Tariq Rd opp Traffic Choki",
+      "phone": "+92 321 2312279",
+      "email": "shaheed@kababjees.com",
+      "deliveryRadiusKm": 8.5,
+      "minOrderAmount": 800,
+      "standardDeliveryFee": 100,
+      "openingTime": "12:00:00",
+      "closingTime": "01:30:00",
+      "isActive": true,
+      "createdAt": "2026-01-10T12:00:00Z"
+    },
+    {
+      "id": "br-kbj-clifton",
+      "tenantId": "tenant-kababjees-01",
+      "name": "Clifton (Boat Basin Food Street)",
+      "code": "KHI-02",
+      "city": "Karachi",
+      "address": "Near Boat Basin Park, Block 4, Clifton",
+      "phone": "+92 21 35876541",
+      "email": "clifton@kababjees.com",
+      "deliveryRadiusKm": 10,
+      "minOrderAmount": 1000,
+      "standardDeliveryFee": 150,
+      "openingTime": "12:00:00",
+      "closingTime": "02:00:00",
+      "isActive": true,
+      "createdAt": "2026-02-01T12:00:00Z"
+    },
+    {
+      "id": "br-kbj-dha-phase6",
+      "tenantId": "tenant-kababjees-01",
+      "name": "DHA Phase 6 (Bukhari Commercial)",
+      "code": "KHI-03",
+      "city": "Karachi",
+      "address": "Plot 14-C, Main Bukhari Commercial, DHA Phase 6",
+      "phone": "+92 21 35349812",
+      "email": "dha@kababjees.com",
+      "deliveryRadiusKm": 9,
+      "minOrderAmount": 1200,
+      "standardDeliveryFee": 150,
+      "openingTime": "13:00:00",
+      "closingTime": "02:00:00",
+      "isActive": true,
+      "createdAt": "2026-03-15T12:00:00Z"
+    },
+    {
+      "id": "br-mehmaan-tariq-rd",
+      "tenantId": "tenant-mehmaan-02",
+      "name": "Tariq Road Flagship",
+      "code": "MHM-01",
+      "city": "Karachi",
+      "address": "Plot no 20 Shop 4 Al-Rehman Corner, DMCHS, Tariq Rd opp Traffic Choki",
+      "phone": "+92 321 2312279",
+      "email": "orders@mehmaan.pk",
+      "deliveryRadiusKm": 8,
+      "minOrderAmount": 600,
+      "standardDeliveryFee": 100,
+      "openingTime": "12:00:00",
+      "closingTime": "01:00:00",
+      "isActive": true,
+      "createdAt": "2026-02-14T10:00:00Z"
+    },
+    {
+      "id": "br-karachi-biryani-01",
+      "tenantId": "tenant-karachi-biryani-test",
+      "name": "Main Saddar Branch",
+      "code": "KHI-01",
+      "city": "Karachi",
+      "address": "Near Regal Chowk, Saddar, Karachi",
+      "phone": "+92 300 1234567",
+      "email": "saddar@karachibiryani.pk",
+      "deliveryRadiusKm": 8,
+      "minOrderAmount": 500,
+      "standardDeliveryFee": 120,
+      "openingTime": "11:00:00",
+      "closingTime": "01:00:00",
+      "isActive": true,
+      "createdAt": "2026-11-05T19:52:26.676Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-super-admin",
+      "tenantId": null,
+      "email": "admin@indolj.enterprise",
+      "passwordHash": "af55541ac8711d25e65c80215f4694e27fba46ca3df1223f8f940d69dc780f7c",
+      "pinHash": "0435b37caae83e3b7b87f9e94606d83cbaf751dcf0e4443654505feca3942794",
+      "firstName": "Platform",
+      "lastName": "Super Admin",
+      "phone": "+92 300 0000000",
+      "role": "PLATFORM_SUPER_ADMIN",
+      "permissions": [
+        "*"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "usr-kbj-owner",
+      "tenantId": "tenant-kababjees-01",
+      "primaryBranchId": "br-kbj-shaheed-e-millat",
+      "email": "owner@kababjees.com",
+      "passwordHash": "71ff4c3d31f2a11793d6f6b50c0323ef2ebdaec0c5826245aa0f822761761fa7",
+      "pinHash": "28d644268f7ec5ba2e4eefaed4317afe5cae553a2cd6fda685e1ac12ed4bed6a",
+      "firstName": "Asif",
+      "lastName": "Farooqi",
+      "phone": "+92 321 8899123",
+      "role": "RESTAURANT_OWNER",
+      "permissions": [
+        "tenants.manage",
+        "branches.view",
+        "branches.create",
+        "branches.edit",
+        "pos.order.create",
+        "pos.order.void",
+        "pos.bill.split",
+        "pos.payment.collect",
+        "kds.ticket.view",
+        "kds.ticket.update",
+        "accounting.journal.view",
+        "accounting.journal.post",
+        "accounting.reports.export",
+        "inventory.stock.view",
+        "inventory.po.create",
+        "inventory.adjust",
+        "crm.customers.view",
+        "crm.sms.broadcast"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-10T12:00:00Z"
+    },
+    {
+      "id": "usr-kbj-cashier",
+      "tenantId": "tenant-kababjees-01",
+      "primaryBranchId": "br-kbj-shaheed-e-millat",
+      "email": "cashier@kababjees.com",
+      "passwordHash": "129c4ad1da430d2ee063ad432cda609573abc381d98b21832eb18fa2ad14257b",
+      "pinHash": "8b879ad92aae54bfe66ddeb433da210c8ea5dc737e17865e86d563f1058da738",
+      "firstName": "Bilal",
+      "lastName": "Ahmed",
+      "phone": "+92 333 4455667",
+      "role": "CASHIER",
+      "permissions": [
+        "pos.order.create",
+        "pos.order.void",
+        "pos.bill.split",
+        "pos.payment.collect",
+        "pos.drawer.open"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-15T12:00:00Z"
+    },
+    {
+      "id": "usr-mehmaan-owner",
+      "tenantId": "tenant-mehmaan-02",
+      "primaryBranchId": "br-mehmaan-tariq-rd",
+      "email": "owner@mehmaan.pk",
+      "passwordHash": "3b7ce8a4c85c60ada59d44873617ed4d7f9bfcda5667a51b3e7b64e7f9aca162",
+      "pinHash": "060a9d448d4904b8b15d90db7b7244bfcd92ddbf63695f2e6773691c86da911f",
+      "firstName": "Zubair",
+      "lastName": "Hashmi",
+      "phone": "+92 321 2312279",
+      "role": "RESTAURANT_OWNER",
+      "permissions": [
+        "tenants.manage",
+        "branches.view",
+        "branches.create",
+        "branches.edit",
+        "pos.order.create",
+        "pos.payment.collect",
+        "kds.ticket.view",
+        "kds.ticket.update",
+        "accounting.reports.export",
+        "inventory.stock.view"
+      ],
+      "isActive": true,
+      "createdAt": "2026-02-14T10:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-bbq-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "name": "Charcoal BBQ & Grills",
+      "slug": "bbq",
+      "displayOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": "cat-karahi-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "name": "Karahi & Handi Specials",
+      "slug": "karahi",
+      "displayOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": "cat-rice-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "name": "Rice, Pulao & Biryani",
+      "slug": "rice",
+      "displayOrder": 3,
+      "isActive": true
+    },
+    {
+      "id": "cat-tandoor-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "name": "Tandoor & Fresh Breads",
+      "slug": "tandoor",
+      "displayOrder": 4,
+      "isActive": true
+    },
+    {
+      "id": "cat-bev-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "name": "Beverages & Desserts",
+      "slug": "beverages",
+      "displayOrder": 5,
+      "isActive": true
+    },
+    {
+      "id": "cat-bbq-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "name": "Charcoal BBQ & Grills",
+      "slug": "bbq",
+      "displayOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": "cat-karahi-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "name": "Karahi & Handi Specials",
+      "slug": "karahi",
+      "displayOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": "cat-rice-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "name": "Rice, Pulao & Biryani",
+      "slug": "rice",
+      "displayOrder": 3,
+      "isActive": true
+    },
+    {
+      "id": "cat-tandoor-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "name": "Tandoor & Fresh Breads",
+      "slug": "tandoor",
+      "displayOrder": 4,
+      "isActive": true
+    },
+    {
+      "id": "cat-bev-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "name": "Beverages & Desserts",
+      "slug": "beverages",
+      "displayOrder": 5,
+      "isActive": true
+    },
+    {
+      "id": "cat-bbq-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "name": "Charcoal BBQ & Grills",
+      "slug": "bbq",
+      "displayOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": "cat-karahi-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "name": "Karahi & Handi Specials",
+      "slug": "karahi",
+      "displayOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": "cat-rice-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "name": "Rice, Pulao & Biryani",
+      "slug": "rice",
+      "displayOrder": 3,
+      "isActive": true
+    },
+    {
+      "id": "cat-tandoor-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "name": "Tandoor & Fresh Breads",
+      "slug": "tandoor",
+      "displayOrder": 4,
+      "isActive": true
+    },
+    {
+      "id": "cat-bev-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "name": "Beverages & Desserts",
+      "slug": "beverages",
+      "displayOrder": 5,
+      "isActive": true
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "item-1-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-karahi-tenant-kababjees-01",
+      "categoryName": "Karahi & Handi Specials",
+      "name": "Kababjees Special Mutton Karahi",
+      "description": "Cooked in pure desi butter with ginger julienne, black pepper, and organic fresh green chilies.",
+      "basePrice": 2850,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 25,
+      "spiciness": "Medium",
+      "variants": [
+        {
+          "name": "Half (0.5 kg)",
+          "price": 1550
+        },
+        {
+          "name": "Full (1.0 kg)",
+          "price": 2850
+        }
+      ]
+    },
+    {
+      "id": "item-2-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-karahi-tenant-kababjees-01",
+      "categoryName": "Karahi & Handi Specials",
+      "name": "Chicken White Makhni Handi",
+      "description": "Boneless chicken cubes simmered in dairy cream, almond paste, and cracked white pepper.",
+      "basePrice": 1950,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 20,
+      "spiciness": "Mild",
+      "variants": [
+        {
+          "name": "Half Handi",
+          "price": 1100
+        },
+        {
+          "name": "Full Handi",
+          "price": 1950
+        }
+      ]
+    },
+    {
+      "id": "item-3-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-bbq-tenant-kababjees-01",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Chicken Malai Boti (12 Pcs)",
+      "description": "Melt-in-mouth chicken breast skewers marinated with cardamom, rich cream, and mild green herbs.",
+      "basePrice": 1250,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 18,
+      "spiciness": "Mild"
+    },
+    {
+      "id": "item-4-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-bbq-tenant-kababjees-01",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Beef Seekh Kabab Royal (4 Skewers)",
+      "description": "Hand-minced prime beef tenderloin blended with smoked cumin, shallots, and tandoori spices.",
+      "basePrice": 1390,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 15,
+      "spiciness": "Hot"
+    },
+    {
+      "id": "item-5-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-bbq-tenant-kababjees-01",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Signature Mutton Chops (6 Pcs)",
+      "description": "Charcoal grilled prime baby lamb chops glazed with raw papaya marinade and dry spices.",
+      "basePrice": 2450,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 22,
+      "spiciness": "Medium"
+    },
+    {
+      "id": "item-6-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-rice-tenant-kababjees-01",
+      "categoryName": "Rice, Pulao & Biryani",
+      "name": "Kababjees Royal Dum Biryani",
+      "description": "Aged basmati rice sealed in earthen handi with succulent pieces and saffron essence.",
+      "basePrice": 1190,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 10,
+      "spiciness": "Hot"
+    },
+    {
+      "id": "item-7-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-tandoor-tenant-kababjees-01",
+      "categoryName": "Tandoor & Fresh Breads",
+      "name": "Roghani Sesame Naan",
+      "description": "Baked in hot clay oven with milk wash, clarified butter, and toasted white sesame seeds.",
+      "basePrice": 120,
+      "station": "TANDOOR",
+      "isAvailable": true,
+      "preparationMinutes": 6
+    },
+    {
+      "id": "item-8-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-tandoor-tenant-kababjees-01",
+      "categoryName": "Tandoor & Fresh Breads",
+      "name": "Garlic Butter Herb Naan",
+      "description": "Infused with roasted garlic cloves and chopped coriander, brushed with salted farm butter.",
+      "basePrice": 150,
+      "station": "TANDOOR",
+      "isAvailable": true,
+      "preparationMinutes": 6
+    },
+    {
+      "id": "item-9-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-bev-tenant-kababjees-01",
+      "categoryName": "Beverages & Desserts",
+      "name": "Fresh Mint Lemonade Cooler",
+      "description": "Crushed garden mint, freshly squeezed Sindhi lemons, black salt, and sparkling soda.",
+      "basePrice": 320,
+      "station": "BEVERAGE_DESSERT",
+      "isAvailable": true,
+      "preparationMinutes": 5
+    },
+    {
+      "id": "item-10-tenant-kababjees-01",
+      "tenantId": "tenant-kababjees-01",
+      "categoryId": "cat-bev-tenant-kababjees-01",
+      "categoryName": "Beverages & Desserts",
+      "name": "Zafrani Matka Kheer",
+      "description": "Slow-cooked condensed milk rice pudding flavored with green cardamom and pure Kashmiri saffron.",
+      "basePrice": 380,
+      "station": "BEVERAGE_DESSERT",
+      "isAvailable": true,
+      "preparationMinutes": 3
+    },
+    {
+      "id": "item-1-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-karahi-tenant-mehmaan-02",
+      "categoryName": "Karahi & Handi Specials",
+      "name": "Mehmaan Restaurant Special Mutton Karahi",
+      "description": "Cooked in pure desi butter with ginger julienne, black pepper, and organic fresh green chilies.",
+      "basePrice": 2850,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 25,
+      "spiciness": "Medium",
+      "variants": [
+        {
+          "name": "Half (0.5 kg)",
+          "price": 1550
+        },
+        {
+          "name": "Full (1.0 kg)",
+          "price": 2850
+        }
+      ]
+    },
+    {
+      "id": "item-2-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-karahi-tenant-mehmaan-02",
+      "categoryName": "Karahi & Handi Specials",
+      "name": "Chicken White Makhni Handi",
+      "description": "Boneless chicken cubes simmered in dairy cream, almond paste, and cracked white pepper.",
+      "basePrice": 1950,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 20,
+      "spiciness": "Mild",
+      "variants": [
+        {
+          "name": "Half Handi",
+          "price": 1100
+        },
+        {
+          "name": "Full Handi",
+          "price": 1950
+        }
+      ]
+    },
+    {
+      "id": "item-3-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-bbq-tenant-mehmaan-02",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Chicken Malai Boti (12 Pcs)",
+      "description": "Melt-in-mouth chicken breast skewers marinated with cardamom, rich cream, and mild green herbs.",
+      "basePrice": 1250,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 18,
+      "spiciness": "Mild"
+    },
+    {
+      "id": "item-4-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-bbq-tenant-mehmaan-02",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Beef Seekh Kabab Royal (4 Skewers)",
+      "description": "Hand-minced prime beef tenderloin blended with smoked cumin, shallots, and tandoori spices.",
+      "basePrice": 1390,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 15,
+      "spiciness": "Hot"
+    },
+    {
+      "id": "item-5-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-bbq-tenant-mehmaan-02",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Signature Mutton Chops (6 Pcs)",
+      "description": "Charcoal grilled prime baby lamb chops glazed with raw papaya marinade and dry spices.",
+      "basePrice": 2450,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 22,
+      "spiciness": "Medium"
+    },
+    {
+      "id": "item-6-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-rice-tenant-mehmaan-02",
+      "categoryName": "Rice, Pulao & Biryani",
+      "name": "Mehmaan Restaurant Royal Dum Biryani",
+      "description": "Aged basmati rice sealed in earthen handi with succulent pieces and saffron essence.",
+      "basePrice": 1190,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 10,
+      "spiciness": "Hot"
+    },
+    {
+      "id": "item-7-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-tandoor-tenant-mehmaan-02",
+      "categoryName": "Tandoor & Fresh Breads",
+      "name": "Roghani Sesame Naan",
+      "description": "Baked in hot clay oven with milk wash, clarified butter, and toasted white sesame seeds.",
+      "basePrice": 120,
+      "station": "TANDOOR",
+      "isAvailable": true,
+      "preparationMinutes": 6
+    },
+    {
+      "id": "item-8-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-tandoor-tenant-mehmaan-02",
+      "categoryName": "Tandoor & Fresh Breads",
+      "name": "Garlic Butter Herb Naan",
+      "description": "Infused with roasted garlic cloves and chopped coriander, brushed with salted farm butter.",
+      "basePrice": 150,
+      "station": "TANDOOR",
+      "isAvailable": true,
+      "preparationMinutes": 6
+    },
+    {
+      "id": "item-9-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-bev-tenant-mehmaan-02",
+      "categoryName": "Beverages & Desserts",
+      "name": "Fresh Mint Lemonade Cooler",
+      "description": "Crushed garden mint, freshly squeezed Sindhi lemons, black salt, and sparkling soda.",
+      "basePrice": 320,
+      "station": "BEVERAGE_DESSERT",
+      "isAvailable": true,
+      "preparationMinutes": 5
+    },
+    {
+      "id": "item-10-tenant-mehmaan-02",
+      "tenantId": "tenant-mehmaan-02",
+      "categoryId": "cat-bev-tenant-mehmaan-02",
+      "categoryName": "Beverages & Desserts",
+      "name": "Zafrani Matka Kheer",
+      "description": "Slow-cooked condensed milk rice pudding flavored with green cardamom and pure Kashmiri saffron.",
+      "basePrice": 380,
+      "station": "BEVERAGE_DESSERT",
+      "isAvailable": true,
+      "preparationMinutes": 3
+    },
+    {
+      "id": "item-1-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-karahi-tenant-karachi-biryani-test",
+      "categoryName": "Karahi & Handi Specials",
+      "name": "Karachi Biryani House Special Mutton Karahi",
+      "description": "Cooked in pure desi butter with ginger julienne, black pepper, and organic fresh green chilies.",
+      "basePrice": 2850,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 25,
+      "spiciness": "Medium",
+      "variants": [
+        {
+          "name": "Half (0.5 kg)",
+          "price": 1550
+        },
+        {
+          "name": "Full (1.0 kg)",
+          "price": 2850
+        }
+      ]
+    },
+    {
+      "id": "item-2-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-karahi-tenant-karachi-biryani-test",
+      "categoryName": "Karahi & Handi Specials",
+      "name": "Chicken White Makhni Handi",
+      "description": "Boneless chicken cubes simmered in dairy cream, almond paste, and cracked white pepper.",
+      "basePrice": 1950,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 20,
+      "spiciness": "Mild",
+      "variants": [
+        {
+          "name": "Half Handi",
+          "price": 1100
+        },
+        {
+          "name": "Full Handi",
+          "price": 1950
+        }
+      ]
+    },
+    {
+      "id": "item-3-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-bbq-tenant-karachi-biryani-test",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Chicken Malai Boti (12 Pcs)",
+      "description": "Melt-in-mouth chicken breast skewers marinated with cardamom, rich cream, and mild green herbs.",
+      "basePrice": 1250,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 18,
+      "spiciness": "Mild"
+    },
+    {
+      "id": "item-4-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-bbq-tenant-karachi-biryani-test",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Beef Seekh Kabab Royal (4 Skewers)",
+      "description": "Hand-minced prime beef tenderloin blended with smoked cumin, shallots, and tandoori spices.",
+      "basePrice": 1390,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 15,
+      "spiciness": "Hot"
+    },
+    {
+      "id": "item-5-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-bbq-tenant-karachi-biryani-test",
+      "categoryName": "Charcoal BBQ & Grills",
+      "name": "Signature Mutton Chops (6 Pcs)",
+      "description": "Charcoal grilled prime baby lamb chops glazed with raw papaya marinade and dry spices.",
+      "basePrice": 2450,
+      "station": "GRILL",
+      "isAvailable": true,
+      "preparationMinutes": 22,
+      "spiciness": "Medium"
+    },
+    {
+      "id": "item-6-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-rice-tenant-karachi-biryani-test",
+      "categoryName": "Rice, Pulao & Biryani",
+      "name": "Karachi Biryani House Royal Dum Biryani",
+      "description": "Aged basmati rice sealed in earthen handi with succulent pieces and saffron essence.",
+      "basePrice": 1190,
+      "station": "KARAHI_WOK",
+      "isAvailable": true,
+      "preparationMinutes": 10,
+      "spiciness": "Hot"
+    },
+    {
+      "id": "item-7-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-tandoor-tenant-karachi-biryani-test",
+      "categoryName": "Tandoor & Fresh Breads",
+      "name": "Roghani Sesame Naan",
+      "description": "Baked in hot clay oven with milk wash, clarified butter, and toasted white sesame seeds.",
+      "basePrice": 120,
+      "station": "TANDOOR",
+      "isAvailable": true,
+      "preparationMinutes": 6
+    },
+    {
+      "id": "item-8-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-tandoor-tenant-karachi-biryani-test",
+      "categoryName": "Tandoor & Fresh Breads",
+      "name": "Garlic Butter Herb Naan",
+      "description": "Infused with roasted garlic cloves and chopped coriander, brushed with salted farm butter.",
+      "basePrice": 150,
+      "station": "TANDOOR",
+      "isAvailable": true,
+      "preparationMinutes": 6
+    },
+    {
+      "id": "item-9-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-bev-tenant-karachi-biryani-test",
+      "categoryName": "Beverages & Desserts",
+      "name": "Fresh Mint Lemonade Cooler",
+      "description": "Crushed garden mint, freshly squeezed Sindhi lemons, black salt, and sparkling soda.",
+      "basePrice": 320,
+      "station": "BEVERAGE_DESSERT",
+      "isAvailable": true,
+      "preparationMinutes": 5
+    },
+    {
+      "id": "item-10-tenant-karachi-biryani-test",
+      "tenantId": "tenant-karachi-biryani-test",
+      "categoryId": "cat-bev-tenant-karachi-biryani-test",
+      "categoryName": "Beverages & Desserts",
+      "name": "Zafrani Matka Kheer",
+      "description": "Slow-cooked condensed milk rice pudding flavored with green cardamom and pure Kashmiri saffron.",
+      "basePrice": 380,
+      "station": "BEVERAGE_DESSERT",
+      "isAvailable": true,
+      "preparationMinutes": 3
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1793974262888-hnje",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "KAB-1048",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-01",
+      "customerName": "Walk-in Guest",
+      "customerPhone": "",
+      "items": [
+        {
+          "id": "item-4-tenant-kababjees-01-std",
+          "menuItemId": "item-4-tenant-kababjees-01",
+          "name": "Beef Seekh Kabab Royal (4 Skewers)",
+          "quantity": 1,
+          "unitPrice": 1390,
+          "totalPrice": 1390,
+          "station": "GRILL",
+          "notes": "",
+          "variant": "",
+          "selectedModifiers": [],
+          "itemStatus": "pending"
+        }
+      ],
+      "subtotal": 1390,
+      "taxAmount": 181,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 1571,
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "kdsStatus": "new",
+      "createdAt": "2026-11-06T14:11:02.888Z",
+      "updatedAt": "2026-11-06T14:11:02.888Z",
+      "terminalId": "POS-01",
+      "cashierName": "Bilal Ahmed",
+      "clientNonce": "offline-1793974262881-wclu"
+    },
+    {
+      "id": "ord-1793917758547-vqvc",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "KAB-1047",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-01",
+      "customerName": "Walk-in Guest",
+      "customerPhone": "",
+      "items": [
+        {
+          "id": "item-6-tenant-kababjees-01-std",
+          "menuItemId": "item-6-tenant-kababjees-01",
+          "name": "Kababjees Royal Dum Biryani",
+          "quantity": 1,
+          "unitPrice": 1190,
+          "totalPrice": 1190,
+          "station": "KARAHI_WOK",
+          "notes": "",
+          "variant": "",
+          "selectedModifiers": [],
+          "itemStatus": "pending"
+        },
+        {
+          "id": "item-1-tenant-kababjees-01-Half (0.5 kg)",
+          "menuItemId": "item-1-tenant-kababjees-01",
+          "name": "Kababjees Special Mutton Karahi",
+          "quantity": 1,
+          "unitPrice": 1550,
+          "totalPrice": 1550,
+          "station": "KARAHI_WOK",
+          "notes": "",
+          "variant": "Half (0.5 kg)",
+          "selectedModifiers": [],
+          "itemStatus": "pending"
+        }
+      ],
+      "subtotal": 2740,
+      "taxAmount": 356,
+      "deliveryFee": 0,
+      "discountAmount": 411,
+      "serviceCharge": 0,
+      "grandTotal": 2685,
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "kdsStatus": "new",
+      "createdAt": "2026-11-05T22:29:18.547Z",
+      "updatedAt": "2026-11-05T22:29:18.547Z",
+      "terminalId": "POS-01",
+      "cashierName": "Bilal Ahmed",
+      "clientNonce": "offline-1793917758545-0u6n"
+    },
+    {
+      "id": "ord-1793917542950-ac2t",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "KAB-1046",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-01",
+      "customerName": "Walk-in Guest",
+      "customerPhone": "",
+      "items": [
+        {
+          "id": "item-1-tenant-kababjees-01-Half (0.5 kg)",
+          "menuItemId": "item-1-tenant-kababjees-01",
+          "name": "Kababjees Special Mutton Karahi",
+          "quantity": 1,
+          "unitPrice": 1550,
+          "totalPrice": 1550,
+          "station": "KARAHI_WOK",
+          "notes": "",
+          "variant": "Half (0.5 kg)",
+          "selectedModifiers": [],
+          "itemStatus": "pending"
+        }
+      ],
+      "subtotal": 1550,
+      "taxAmount": 202,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 1752,
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "kdsStatus": "new",
+      "createdAt": "2026-11-05T22:25:42.950Z",
+      "updatedAt": "2026-11-05T22:25:42.950Z",
+      "terminalId": "POS-01",
+      "cashierName": "Bilal Ahmed",
+      "clientNonce": "offline-1793917542945-g0pg"
+    },
+    {
+      "id": "ord-1793910431112-4erm",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "KAB-1045",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-01",
+      "customerName": "Walk-in Guest",
+      "customerPhone": "",
+      "items": [
+        {
+          "id": "item-1-tenant-kababjees-01-Half (0.5 kg)",
+          "menuItemId": "item-1-tenant-kababjees-01",
+          "name": "Kababjees Special Mutton Karahi",
+          "quantity": 1,
+          "unitPrice": 1550,
+          "totalPrice": 1550,
+          "station": "KARAHI_WOK",
+          "notes": "",
+          "variant": "Half (0.5 kg)",
+          "selectedModifiers": [],
+          "itemStatus": "pending"
+        }
+      ],
+      "subtotal": 1550,
+      "taxAmount": 202,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 1752,
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "kdsStatus": "new",
+      "createdAt": "2026-11-05T20:27:11.112Z",
+      "updatedAt": "2026-11-05T20:27:11.112Z",
+      "cashierName": "Asif Farooqi",
+      "clientNonce": "offline-1793910431108-z222"
+    },
+    {
+      "id": "ord-1793909411328-g60b",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "KAB-1044",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-01",
+      "customerName": "Walk-in Guest",
+      "customerPhone": "",
+      "items": [
+        {
+          "id": "item-6-tenant-kababjees-01-std",
+          "menuItemId": "item-6-tenant-kababjees-01",
+          "name": "Kababjees Royal Dum Biryani",
+          "quantity": 1,
+          "unitPrice": 1190,
+          "totalPrice": 1190,
+          "station": "KARAHI_WOK",
+          "notes": "",
+          "variant": "",
+          "selectedModifiers": [],
+          "itemStatus": "cooking"
+        }
+      ],
+      "subtotal": 1190,
+      "taxAmount": 155,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 1345,
+      "paymentMethod": "jazzcash",
+      "paymentStatus": "paid",
+      "kdsStatus": "preparing",
+      "createdAt": "2026-11-05T20:10:11.328Z",
+      "updatedAt": "2026-11-05T20:18:29.004Z",
+      "cashierName": "Asif Farooqi",
+      "clientNonce": "offline-1793909411324-voe1"
+    },
+    {
+      "id": "ord-1793909228169-3uue",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "KAB-1043",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-01",
+      "customerName": "Walk-in Guest",
+      "customerPhone": "",
+      "items": [
+        {
+          "id": "item-1-tenant-kababjees-01-Half (0.5 kg)",
+          "menuItemId": "item-1-tenant-kababjees-01",
+          "name": "Kababjees Special Mutton Karahi",
+          "quantity": 1,
+          "unitPrice": 1550,
+          "totalPrice": 1550,
+          "station": "KARAHI_WOK",
+          "notes": "",
+          "variant": "Half (0.5 kg)",
+          "selectedModifiers": [],
+          "itemStatus": "pending"
+        }
+      ],
+      "subtotal": 1550,
+      "taxAmount": 202,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 1752,
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "kdsStatus": "accepted",
+      "createdAt": "2026-11-05T20:07:08.169Z",
+      "updatedAt": "2026-11-05T20:18:31.124Z",
+      "cashierName": "Asif Farooqi",
+      "clientNonce": "offline-1793909228165-txyz"
+    },
+    {
+      "id": "ord-1793909200784-9s9c",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "KAB-1042",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-01",
+      "customerName": "Walk-in Guest",
+      "customerPhone": "",
+      "items": [
+        {
+          "id": "item-2-tenant-kababjees-01-Half Handi",
+          "menuItemId": "item-2-tenant-kababjees-01",
+          "name": "Chicken White Makhni Handi",
+          "quantity": 1,
+          "unitPrice": 1100,
+          "totalPrice": 1100,
+          "station": "KARAHI_WOK",
+          "notes": "",
+          "variant": "Half Handi",
+          "selectedModifiers": [],
+          "itemStatus": "ready"
+        }
+      ],
+      "subtotal": 1100,
+      "taxAmount": 143,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 1243,
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "kdsStatus": "completed",
+      "createdAt": "2026-11-05T20:06:40.784Z",
+      "updatedAt": "2026-11-05T20:27:54.020Z",
+      "cashierName": "Asif Farooqi",
+      "clientNonce": "offline-1793909200780-pm7s"
+    },
+    {
+      "id": "ord-1793908346682-zcma",
+      "tenantId": "tenant-karachi-biryani-test",
+      "branchId": "br-karachi-biryani-01",
+      "orderNumber": "KAR-1041",
+      "channel": "web",
+      "orderType": "delivery",
+      "customerName": "Fatima Zahra",
+      "customerPhone": "+92 321 9876543",
+      "deliveryAddress": "Flat 4B, Gulshan-e-Iqbal Block 13, Karachi",
+      "items": [
+        {
+          "id": "it-1",
+          "menuItemId": "item-1-tenant-karachi-biryani-test",
+          "name": "Karachi Biryani House Special Mutton Karahi",
+          "quantity": 2,
+          "unitPrice": 2850,
+          "totalPrice": 5700,
+          "station": "KARAHI_WOK",
+          "variant": "Full",
+          "notes": "Extra raita and salad please",
+          "itemStatus": "ready"
+        }
+      ],
+      "subtotal": 5700,
+      "taxAmount": 741,
+      "deliveryFee": 120,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 6561,
+      "paymentMethod": "cash",
+      "paymentStatus": "pending",
+      "kdsStatus": "completed",
+      "createdAt": "2026-11-05T19:52:26.682Z",
+      "updatedAt": "2026-11-05T20:04:12.188Z"
+    },
+    {
+      "id": "ord-1021",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "IND-1021",
+      "channel": "pos",
+      "orderType": "dine_in",
+      "tableNumber": "T-04",
+      "customerName": "Muhammad Salman",
+      "customerPhone": "+92 300 2345678",
+      "items": [
+        {
+          "id": "item-1021-1",
+          "menuItemId": "item-mhm-1-tenant-kababjees-01",
+          "name": "Kababjees Special Mutton Karahi",
+          "quantity": 1,
+          "unitPrice": 2850,
+          "totalPrice": 2850,
+          "station": "KARAHI_WOK",
+          "variant": "Full (1.0 kg)",
+          "notes": "Extra ginger & spicy",
+          "itemStatus": "ready"
+        },
+        {
+          "id": "item-1021-2",
+          "menuItemId": "item-mhm-7-tenant-kababjees-01",
+          "name": "Roghani Sesame Naan",
+          "quantity": 4,
+          "unitPrice": 120,
+          "totalPrice": 480,
+          "station": "TANDOOR",
+          "itemStatus": "ready"
+        }
+      ],
+      "subtotal": 3330,
+      "taxAmount": 433,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 150,
+      "grandTotal": 3913,
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "kdsStatus": "completed",
+      "createdAt": "2026-11-05T19:37:22.482Z",
+      "updatedAt": "2026-11-05T20:04:12.938Z",
+      "cashierName": "Bilal Ahmed"
+    },
+    {
+      "id": "ord-1022",
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "orderNumber": "IND-1022",
+      "channel": "web",
+      "orderType": "delivery",
+      "customerName": "Ayesha Siddiqui",
+      "customerPhone": "+92 321 8899221",
+      "deliveryAddress": "House 42, Block 3, DMCHS, Karachi",
+      "items": [
+        {
+          "id": "item-1022-1",
+          "menuItemId": "item-mhm-3-tenant-kababjees-01",
+          "name": "Chicken Malai Boti (12 Pcs)",
+          "quantity": 2,
+          "unitPrice": 1250,
+          "totalPrice": 2500,
+          "station": "GRILL",
+          "itemStatus": "ready"
+        },
+        {
+          "id": "item-1022-2",
+          "menuItemId": "item-mhm-8-tenant-kababjees-01",
+          "name": "Garlic Butter Herb Naan",
+          "quantity": 4,
+          "unitPrice": 150,
+          "totalPrice": 600,
+          "station": "TANDOOR",
+          "itemStatus": "ready"
+        },
+        {
+          "id": "item-1022-3",
+          "menuItemId": "item-mhm-9-tenant-kababjees-01",
+          "name": "Fresh Mint Lemonade Cooler",
+          "quantity": 2,
+          "unitPrice": 320,
+          "totalPrice": 640,
+          "station": "BEVERAGE_DESSERT",
+          "itemStatus": "ready"
+        }
+      ],
+      "subtotal": 3740,
+      "taxAmount": 486,
+      "deliveryFee": 120,
+      "discountAmount": 374,
+      "serviceCharge": 0,
+      "grandTotal": 3972,
+      "paymentMethod": "jazzcash",
+      "paymentStatus": "paid",
+      "kdsStatus": "completed",
+      "createdAt": "2026-11-05T19:29:22.485Z",
+      "updatedAt": "2026-11-05T20:04:13.654Z"
+    },
+    {
+      "id": "ord-1023",
+      "tenantId": "tenant-mehmaan-02",
+      "branchId": "br-mehmaan-tariq-rd",
+      "orderNumber": "MHM-1023",
+      "channel": "pos",
+      "orderType": "takeaway",
+      "customerName": "Daniyal Khan",
+      "customerPhone": "+92 345 9876543",
+      "items": [
+        {
+          "id": "item-1023-1",
+          "menuItemId": "item-mhm-1-tenant-mehmaan-02",
+          "name": "Mehmaan Special Mutton Karahi",
+          "quantity": 1,
+          "unitPrice": 2850,
+          "totalPrice": 2850,
+          "station": "KARAHI_WOK",
+          "variant": "Full (1.0 kg)",
+          "itemStatus": "ready"
+        },
+        {
+          "id": "item-1023-2",
+          "menuItemId": "item-mhm-4-tenant-mehmaan-02",
+          "name": "Beef Seekh Kabab Royal (4 Skewers)",
+          "quantity": 2,
+          "unitPrice": 1390,
+          "totalPrice": 2780,
+          "station": "GRILL",
+          "itemStatus": "ready"
+        },
+        {
+          "id": "item-1023-3",
+          "menuItemId": "item-mhm-7-tenant-mehmaan-02",
+          "name": "Roghani Sesame Naan",
+          "quantity": 6,
+          "unitPrice": 120,
+          "totalPrice": 720,
+          "station": "TANDOOR",
+          "itemStatus": "ready"
+        }
+      ],
+      "subtotal": 6350,
+      "taxAmount": 825,
+      "deliveryFee": 0,
+      "discountAmount": 0,
+      "serviceCharge": 0,
+      "grandTotal": 7175,
+      "paymentMethod": "card",
+      "paymentStatus": "paid",
+      "kdsStatus": "completed",
+      "createdAt": "2026-11-05T19:48:22.485Z",
+      "updatedAt": "2026-11-05T20:04:17.981Z",
+      "cashierName": "Zubair Hashmi"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-1793974362779-jsdu",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-06T14:12:42.779Z"
+    },
+    {
+      "id": "audit-1793974335132-gvd3",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-06T14:12:15.132Z"
+    },
+    {
+      "id": "audit-1793974262889-21fc",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "order.created",
+      "entityType": "Order",
+      "entityId": "ord-1793974262888-hnje",
+      "details": {
+        "orderNumber": "KAB-1048",
+        "grandTotal": 1571,
+        "channel": "pos",
+        "orderType": "dine_in"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-06T14:11:02.889Z"
+    },
+    {
+      "id": "audit-1793974250190-14gf",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-06T14:10:50.190Z"
+    },
+    {
+      "id": "audit-1793917758548-lswc",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "order.created",
+      "entityType": "Order",
+      "entityId": "ord-1793917758547-vqvc",
+      "details": {
+        "orderNumber": "KAB-1047",
+        "grandTotal": 2685,
+        "channel": "pos",
+        "orderType": "dine_in"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T22:29:18.548Z"
+    },
+    {
+      "id": "audit-1793917752955-i1ds",
+      "tenantId": null,
+      "userId": "usr-super-admin",
+      "userEmail": "admin@indolj.enterprise",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-super-admin",
+      "details": {
+        "method": "password",
+        "role": "PLATFORM_SUPER_ADMIN"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T22:29:12.955Z"
+    },
+    {
+      "id": "audit-1793917542952-b1yx",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "order.created",
+      "entityType": "Order",
+      "entityId": "ord-1793917542950-ac2t",
+      "details": {
+        "orderNumber": "KAB-1046",
+        "grandTotal": 1752,
+        "channel": "pos",
+        "orderType": "dine_in"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T22:25:42.952Z"
+    },
+    {
+      "id": "audit-1793917532992-t7td",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "pos.shift.opened",
+      "entityType": "CashierShift",
+      "entityId": "shift-1793917532989-96bw",
+      "details": {
+        "openingCash": 5000,
+        "branchId": "br-kbj-shaheed-e-millat"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T22:25:32.992Z"
+    },
+    {
+      "id": "audit-1793917161080-jtya",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T22:19:21.080Z"
+    },
+    {
+      "id": "audit-1793915013232-zt5l",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T21:43:33.233Z"
+    },
+    {
+      "id": "audit-1793914052896-lyaz",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T21:27:32.896Z"
+    },
+    {
+      "id": "audit-1793913842533-hc9o",
+      "tenantId": "tenant-mehmaan-02",
+      "userId": "usr-mehmaan-owner",
+      "userEmail": "owner@mehmaan.pk",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-mehmaan-owner",
+      "details": {
+        "method": "password",
+        "role": "RESTAURANT_OWNER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T21:24:02.533Z"
+    },
+    {
+      "id": "audit-1793912965265-el80",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T21:09:25.265Z"
+    },
+    {
+      "id": "audit-1793912909164-ied6",
+      "tenantId": null,
+      "userId": "usr-super-admin",
+      "userEmail": "admin@indolj.enterprise",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-super-admin",
+      "details": {
+        "method": "password",
+        "role": "PLATFORM_SUPER_ADMIN"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T21:08:29.164Z"
+    },
+    {
+      "id": "audit-1793910431114-rge8",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-owner",
+      "userEmail": "owner@kababjees.com",
+      "action": "order.created",
+      "entityType": "Order",
+      "entityId": "ord-1793910431112-4erm",
+      "details": {
+        "orderNumber": "KAB-1045",
+        "grandTotal": 1752,
+        "channel": "pos",
+        "orderType": "dine_in"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:27:11.114Z"
+    },
+    {
+      "id": "audit-1793910039832-1d4f",
+      "tenantId": null,
+      "userId": "usr-super-admin",
+      "userEmail": "admin@indolj.enterprise",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-super-admin",
+      "details": {
+        "method": "password",
+        "role": "PLATFORM_SUPER_ADMIN"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:20:39.832Z"
+    },
+    {
+      "id": "audit-1793910039295-8n9f",
+      "tenantId": "tenant-mehmaan-02",
+      "userId": "usr-mehmaan-owner",
+      "userEmail": "owner@mehmaan.pk",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-mehmaan-owner",
+      "details": {
+        "method": "password",
+        "role": "RESTAURANT_OWNER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:20:39.295Z"
+    },
+    {
+      "id": "audit-1793910037311-w8rs",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-owner",
+      "userEmail": "owner@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-owner",
+      "details": {
+        "method": "password",
+        "role": "RESTAURANT_OWNER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:20:37.311Z"
+    },
+    {
+      "id": "audit-1793910028385-jm3l",
+      "tenantId": "tenant-mehmaan-02",
+      "userId": "usr-mehmaan-owner",
+      "userEmail": "owner@mehmaan.pk",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-mehmaan-owner",
+      "details": {
+        "method": "password",
+        "role": "RESTAURANT_OWNER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:20:28.385Z"
+    },
+    {
+      "id": "audit-1793909411330-9czd",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-owner",
+      "userEmail": "owner@kababjees.com",
+      "action": "order.created",
+      "entityType": "Order",
+      "entityId": "ord-1793909411328-g60b",
+      "details": {
+        "orderNumber": "KAB-1044",
+        "grandTotal": 1345,
+        "channel": "pos",
+        "orderType": "dine_in"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:10:11.330Z"
+    },
+    {
+      "id": "audit-1793909228171-n7cb",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-owner",
+      "userEmail": "owner@kababjees.com",
+      "action": "order.created",
+      "entityType": "Order",
+      "entityId": "ord-1793909228169-3uue",
+      "details": {
+        "orderNumber": "KAB-1043",
+        "grandTotal": 1752,
+        "channel": "pos",
+        "orderType": "dine_in"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:07:08.171Z"
+    },
+    {
+      "id": "audit-1793909200785-fx9r",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-owner",
+      "userEmail": "owner@kababjees.com",
+      "action": "order.created",
+      "entityType": "Order",
+      "entityId": "ord-1793909200784-9s9c",
+      "details": {
+        "orderNumber": "KAB-1042",
+        "grandTotal": 1243,
+        "channel": "pos",
+        "orderType": "dine_in"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:06:40.785Z"
+    },
+    {
+      "id": "audit-1793909187503-nhp1",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-owner",
+      "userEmail": "owner@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-owner",
+      "details": {
+        "method": "password",
+        "role": "RESTAURANT_OWNER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:06:27.503Z"
+    },
+    {
+      "id": "audit-1793909093808-ai8d",
+      "tenantId": "tenant-kababjees-01",
+      "userId": "usr-kbj-cashier",
+      "userEmail": "cashier@kababjees.com",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-kbj-cashier",
+      "details": {
+        "method": "password",
+        "role": "CASHIER"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:04:53.808Z"
+    },
+    {
+      "id": "audit-1793909015233-aceo",
+      "tenantId": null,
+      "userId": "usr-super-admin",
+      "userEmail": "admin@indolj.enterprise",
+      "action": "auth.login_success",
+      "entityType": "User",
+      "entityId": "usr-super-admin",
+      "details": {
+        "method": "password",
+        "role": "PLATFORM_SUPER_ADMIN"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T20:03:35.233Z"
+    },
+    {
+      "id": "audit-1793908282486-bibw",
+      "tenantId": null,
+      "userId": "usr-super-admin",
+      "userEmail": "admin@indolj.enterprise",
+      "action": "system.boot",
+      "entityType": "System",
+      "entityId": "eros-core",
+      "details": {
+        "status": "Initialized Phase 1 multi-tenant architecture & POS/KDS engine"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-11-05T19:51:22.486Z"
+    }
+  ],
+  "shifts": [
+    {
+      "tenantId": "tenant-kababjees-01",
+      "branchId": "br-kbj-shaheed-e-millat",
+      "userId": "usr-kbj-cashier",
+      "cashierName": "Bilal Ahmed",
+      "terminalId": "POS-01",
+      "openingCash": 5000,
+      "id": "shift-1793917532989-96bw",
+      "transactions": [],
+      "status": "open",
+      "openedAt": "2026-11-05T22:25:32.989Z"
+    }
+  ],
+  "orderSequence": 1048
+}

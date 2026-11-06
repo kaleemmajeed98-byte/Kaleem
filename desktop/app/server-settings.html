@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline';"
+    >
+    <title>Connect to Indolj</title>
+    <style>
+      :root { color-scheme: dark; font-family: Manrope, "Segoe UI", sans-serif; }
+      * { box-sizing: border-box; }
+      body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; background: #090a0b; color: #f5f6f7; }
+      main { width: min(100%, 480px); padding: 36px; border: 1px solid #292c2f; border-radius: 20px; background: #111315; box-shadow: 0 24px 80px #0008; }
+      .mark { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid #555; border-radius: 12px; background: #242424; color: #fff; font-weight: 800; letter-spacing: -.05em; }
+      h1 { margin: 22px 0 6px; font-size: 24px; letter-spacing: -.04em; }
+      p { color: #a4a9ad; font-size: 14px; line-height: 1.65; }
+      label { display: block; margin-top: 24px; color: #dedede; font-size: 12px; font-weight: 700; }
+      input { width: 100%; margin-top: 8px; padding: 13px 14px; border: 1px solid #34383c; border-radius: 10px; outline: none; background: #090a0b; color: white; font: inherit; }
+      input:focus { border-color: #a8a8a8; }
+      button { width: 100%; margin-top: 16px; padding: 13px; border: 0; border-radius: 10px; background: #f0f0f0; color: #090a0b; font: inherit; font-weight: 800; cursor: pointer; }
+      button:disabled { opacity: .6; cursor: wait; }
+      #error { min-height: 20px; margin: 12px 0 0; color: #fca5a5; font-size: 12px; }
+      .hint { margin-top: 18px; font-size: 11px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark">i.</div>
+      <h1>Connect to your server</h1>
+      <p>Enter the Indolj server address for this terminal. POS and KDS should use the same server to share live orders.</p>
+      <form id="settings-form">
+        <label for="server-url">Server address</label>
+        <input id="server-url" type="url" placeholder="https://erp.example.com" autocomplete="url" required>
+        <button id="connect-button" type="submit">Connect</button>
+        <p id="error" role="alert"></p>
+      </form>
+      <p class="hint">Use the server root address only, without /pos or /kds. Press Ctrl+, any time to change it.</p>
+    </main>
+    <script>
+      const input = document.getElementById('server-url');
+      const button = document.getElementById('connect-button');
+      const error = document.getElementById('error');
+      const queryError = new URLSearchParams(location.search).get('error');
+      error.textContent = queryError || '';
+      window.terminalSettings.getServerUrl().then((serverUrl) => {
+        if (serverUrl) input.value = serverUrl;
+      }).catch(() => {
+        error.textContent = 'Could not load saved server settings.';
+      });
+      document.getElementById('settings-form').addEventListener('submit', async (event) => {
+        event.preventDefault();
+        button.disabled = true;
+        button.textContent = 'Connecting…';
+        error.textContent = '';
+        try {
+          await window.terminalSettings.saveServerUrl(input.value);
+        } catch (reason) {
+          error.textContent = reason instanceof Error ? reason.message : 'Could not save server settings.';
+          button.disabled = false;
+          button.textContent = 'Connect';
+        }
+      });
+    </script>
+  </body>
+</html>

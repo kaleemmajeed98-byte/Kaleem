@@ -1,0 +1,6 @@
+{
+  "name": "Mehmaan Restaurant",
+  "description": "Mehmaan Restaurant in Karachi - Savor authentic Pakistani BBQ, Shinwari Karahi, Handi, and Dum Biryani with renowned Karachi hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

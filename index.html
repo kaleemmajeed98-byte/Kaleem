@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indolj ERP | Restaurant Management</title>
+    <meta name="description" content="Indolj ERP provides role-based restaurant management, branch operations, reporting, and compliance tools." />
+    <meta property="og:title" content="Indolj ERP | Restaurant Management" />
+    <meta property="og:description" content="Manage restaurant operations, branches, reporting, and compliance with role-based access." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Indolj.pk" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Indolj Pakistan" />
+    <meta name="twitter:description" content="Role-based restaurant management, reporting, and compliance tools." />
+    
+    <!-- Google Fonts: Sora and Manrope for ERP/KDS, Outfit and Jakarta Sans for the storefront, JetBrains Mono for telemetry -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Restaurant Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Mehmaan Restaurant",
+      "image": "/src/assets/images/hero_mehmaan_dining_1793901968860.jpg",
+      "priceRange": "Rs 1,000–7,000",
+      "servesCuisine": ["Pakistani", "Barbecue", "Mughlai", "Shinwari Karahi", "South Asian"],
+      "telephone": "+923212312279",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "231"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot no 20 Shop4 alrehman corner D M C H society shaheed e millat, Tariq Rd, opp. traffic choki, Delhi CHS",
+        "addressLocality": "Karachi",
+        "postalCode": "75400",
+        "addressCountry": "PK"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "12:00",
+          "closes": "01:00"
+        }
+      ],
+      "hasMenu": "#menu",
+      "acceptsReservations": "True"
+    }
+    </script>
+  </head>
+  <body class="bg-stone-950 text-stone-100 antialiased selection:bg-amber-500/30 selection:text-amber-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

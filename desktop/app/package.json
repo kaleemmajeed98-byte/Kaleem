@@ -1,0 +1,8 @@
+{
+  "name": "zestpos-desktop",
+  "version": "1.0.0",
+  "description": "ZestPOS Enterprise desktop terminal",
+  "author": "ZestPOS Enterprise",
+  "main": "pos.cjs",
+  "private": true
+}

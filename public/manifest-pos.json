@@ -1,0 +1,17 @@
+{
+  "name": "EROS Touch POS Terminal",
+  "short_name": "EROS POS",
+  "start_url": "/pos",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#0c0a09",
+  "theme_color": "#10b981",
+  "description": "Touchscreen Cashier POS Terminal with Offline Resilience & Thermal Printing",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
